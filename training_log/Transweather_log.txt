@@ -1,0 +1,12 @@
+Date: 2022-07-11 16:23:22s, Time_Cost: 22s, Epoch: [1/250], Train_PSNR: 8.95, Val_PSNR: 21.53, Val_SSIM: 0.4230
+Date: 2022-07-11 16:23:38s, Time_Cost: 16s, Epoch: [2/250], Train_PSNR: 14.65, Val_PSNR: 22.54, Val_SSIM: 0.5431
+Date: 2022-07-11 16:23:54s, Time_Cost: 15s, Epoch: [3/250], Train_PSNR: 15.58, Val_PSNR: 23.09, Val_SSIM: 0.5918
+Date: 2022-07-11 16:24:10s, Time_Cost: 16s, Epoch: [4/250], Train_PSNR: 16.20, Val_PSNR: 23.54, Val_SSIM: 0.6218
+Date: 2022-07-11 16:24:26s, Time_Cost: 15s, Epoch: [5/250], Train_PSNR: 16.82, Val_PSNR: 23.65, Val_SSIM: 0.6507
+Date: 2022-07-11 16:24:41s, Time_Cost: 15s, Epoch: [6/250], Train_PSNR: 16.95, Val_PSNR: 23.64, Val_SSIM: 0.6698
+Date: 2022-07-11 16:24:57s, Time_Cost: 15s, Epoch: [7/250], Train_PSNR: 17.56, Val_PSNR: 23.78, Val_SSIM: 0.6914
+Date: 2022-07-11 16:25:12s, Time_Cost: 15s, Epoch: [8/250], Train_PSNR: 17.96, Val_PSNR: 24.02, Val_SSIM: 0.7018
+Date: 2022-07-11 16:25:28s, Time_Cost: 15s, Epoch: [9/250], Train_PSNR: 18.22, Val_PSNR: 23.40, Val_SSIM: 0.7120
+Date: 2022-07-11 16:25:44s, Time_Cost: 16s, Epoch: [10/250], Train_PSNR: 18.55, Val_PSNR: 23.90, Val_SSIM: 0.7237
+Date: 2022-07-11 16:25:59s, Time_Cost: 15s, Epoch: [11/250], Train_PSNR: 18.57, Val_PSNR: 24.08, Val_SSIM: 0.7299
+Date: 2022-07-11 16:26:15s, Time_Cost: 15s, Epoch: [12/250], Train_PSNR: 19.09, Val_PSNR: 25.07, Val_SSIM: 0.7418
