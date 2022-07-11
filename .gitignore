@@ -1,4 +1,7 @@
-data
+# image files for input and ground truth
+data/*/gt
+data/*/input
+
+# cache
 __pycache__
 Transweather
-
