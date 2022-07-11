@@ -59,7 +59,8 @@ TransWeather is trained on a combination of images sampled from Outdoor-Rain, Sn
 
 ### Dataset format:
 
-Download the datasets and arrange them in the following format. T
+Download the datasets and arrange them in the following format.
+
 ```
     TransWeather
     ├── data 
@@ -74,11 +75,29 @@ Download the datasets and arrange them in the following format. T
     |   |   |   └── gt            # clean images
     |   |   └── dataset_filename.txt
 ```
+- format which will be applicated later
+ 
+    ```
+    TransWeather
+    ├── data 
+    |   ├── train # Training  
+    |   |   ├── <dataset_name>   
+    |   |   |   ├── input         # rain images 
+    |   |   |   └── gt            # clean images
+    |   |   └── dataset_filename.txt
+    |   └── test  # Testing         
+    |   |   ├── <dataset_name>          
+    |   |   |   ├── input         # rain images 
+    |   |   |   └── gt            # clean images
+    |   |   └── dataset_filename.txt
+	```
+
 
 ### Text Files:
 
 [Link](https://drive.google.com/file/d/1UsazX-P3sPcDGw3kxkyFWqUyNfhYN_AM/view?usp=sharing)
 
+Should check the path.
 
 ## Evaluation Code:
 
