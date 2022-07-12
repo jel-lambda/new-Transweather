@@ -1,13 +1,12 @@
 import os.path
 
-targerdir = r"/home/cvmlserver/Seohyeon/TransWeather/data/train/input"
+file_path = r"/home/cvmlserver/Seohyeon/TransWeather/data/test/input"
 
-files = os.listdir(targerdir)
+files = os.listdir(file_path)
 
-for i in files:
-
-    # if os.path.isdir(targerdir + r"\\" + i):
-    #     print("folder : " +i)
-
-    # else :
-        print("input/" + i)
+for name in files:
+    src = os.path.join(file_path, name)
+    new_name =  name.split('_')[0] + '_1977.jpg'
+    dst = os.path.join(file_path, new_name)
+    print("input/"+ new_name)
+    os.rename(src, dst)
