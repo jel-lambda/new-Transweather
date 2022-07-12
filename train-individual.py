@@ -101,11 +101,11 @@ loss_network.eval()
 
 ### The following file should be placed inside the directory "./data/train/"
 
-labeled_name = 'rain800.txt' # Change this based on the dataset you choose to train on
+labeled_name = '1977.txt' # Change this based on the dataset you choose to train on
 
 ### The following files should be placed inside the directory "./data/test/"
 
-val_filename1 = 'rain800_test.txt' # Change this based on the dataset you choose to test on
+val_filename1 = '1977.txt' # Change this based on the dataset you choose to test on
 
 # --- Load training data and validation/test data --- #
 lbl_train_data_loader = DataLoader(TrainData(crop_size, train_data_dir,labeled_name), batch_size=train_batch_size, shuffle=True, num_workers=8)
@@ -117,7 +117,7 @@ net.eval()
 
 old_val_psnr1, old_val_ssim1 = validation(net, val_data_loader1, device, exp_name)
 
-print('Rain 800 old_val_psnr: {0:.2f}, old_val_ssim: {1:.4f}'.format(old_val_psnr1, old_val_ssim1))
+print('1977 filter old_val_psnr: {0:.2f}, old_val_ssim: {1:.4f}'.format(old_val_psnr1, old_val_ssim1))
 
 net.train()
 
@@ -166,7 +166,7 @@ for epoch in range(epoch_start,num_epochs):
 
     one_epoch_time = time.time() - start_time
 
-    print("Rain 800")
+    print("1977 filter")
     print_log(epoch+1, num_epochs, one_epoch_time, train_psnr, val_psnr1, val_ssim1, exp_name)
 
     # --- update the network weight --- #
