@@ -1,12 +1,44 @@
 import os.path
 
-file_path = r"/home/cvmlserver/Seohyeon/TransWeather/data/train/Amaro/gt"
+""" data 폴더 내 파일 이름을 바꿔주는 함수, 
+    filter_name: 상위 폴더 이름대로 지정 """
+def rename_files(file_path, filter_name):
+    files = os.listdir(file_path)
+    for name in files:
+        src = os.path.join(file_path, name)
+        new_name =  name.split('_')[0] + '_' + filter_name +'.jpg'
+        dst = os.path.join(file_path, new_name)
+        os.rename(src, dst)
 
-files = os.listdir(file_path)
+def rename_and_textfile(file_path, filter_name):
+    f = open("/home/cvmlserver/Seohyeon/TransWeather/data/train/allfilter.txt", 'a')
+    files = os.listdir(file_path)
+    for name in files:
+        src = os.path.join(file_path, name)
+        new_name =  name.split('_')[0] + '_' + filter_name +'.jpg'
+        dst = os.path.join(file_path, new_name)
+        f.write(filter_name + "/input/"+ name + '\n')
+        os.rename(src, dst)
+    f.close
 
-for name in files:
-    src = os.path.join(file_path, name)
-    new_name =  name.split('_')[0] + '_Amaro.jpg'
-    dst = os.path.join(file_path, new_name)
-    print("Amaro/input/"+ new_name)
-    os.rename(src, dst)
+def in_all_dir(dir_path,func):
+    dir_list = os.listdir(dir_path)
+    if func == 'rename_files':
+        for directory in dir_list:
+            if directory.split('.')[-1] != 'txt':
+                file_path =  os.path.join(dir_path, directory + '/gt/')
+                rename_files(file_path, directory)
+    else:
+        f = open("/home/cvmlserver/Seohyeon/TransWeather/data/train/allfilter.txt", 'w')
+        f.close
+        for directory in dir_list:
+            if directory.split('.')[-1] != 'txt':
+                file_path =  os.path.join(dir_path, directory + '/gt/')
+                rename_and_textfile(file_path, directory)
+
+def main(): 
+    dir_path = r"/home/cvmlserver/Seohyeon/TransWeather/data/test/"
+    in_all_dir(dir_path, 'rename_files')
+
+if(__name__) == '__main__':
+    main()
