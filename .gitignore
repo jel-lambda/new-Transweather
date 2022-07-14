@@ -1,16 +1,15 @@
 # image files for input and ground truth
-data/*/gt
-data/*/input
-data/*/gt_rain
-data/*/input_rain
+data/*/*/gt
+data/*/*/input
 
 # cache
 __pycache__
 
 # weights
-1977filter3
-1977filter4
-1977filter5
+weights
 
 # results
 results
+
+# vscode setting
+.vscode
