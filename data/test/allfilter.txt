@@ -20,4 +20,3 @@ Amaro/input/489_Amaro.jpg
 1977/input/490_1977.jpg
 1977/input/498_1977.jpg
 1977/input/489_1977.jpg
-

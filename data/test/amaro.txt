@@ -9,15 +9,3 @@ Amaro/input/491_Amaro.jpg
 Amaro/input/490_Amaro.jpg
 Amaro/input/498_Amaro.jpg
 Amaro/input/489_Amaro.jpg
-1977/input/496_1977.jpg
-1977/input/493_1977.jpg
-1977/input/495_1977.jpg
-1977/input/494_1977.jpg
-1977/input/492_1977.jpg
-1977/input/497_1977.jpg
-1977/input/499_1977.jpg
-1977/input/491_1977.jpg
-1977/input/490_1977.jpg
-1977/input/498_1977.jpg
-1977/input/489_1977.jpg
-
