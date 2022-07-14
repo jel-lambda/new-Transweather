@@ -103,7 +103,7 @@ loss_network.eval()
 
 ### The following file should be placed inside the directory "./data/train/"
 
-labeled_name = 'allweather.txt'
+labeled_name = 'allfilter.txt'
 
 ### The following files should be placed inside the directory "./data/test/"
 
@@ -183,7 +183,7 @@ for epoch in range(epoch_start,num_epochs):
     one_epoch_time = time.time() - start_time
     # print("Rain 800")
     # print_log(epoch+1, num_epochs, one_epoch_time, train_psnr, val_psnr, val_ssim, exp_name)
-    print("1977")
+    print("allfilter")
     print_log(epoch+1, num_epochs, one_epoch_time, train_psnr, val_psnr1, val_ssim1, exp_name)
 
     # --- update the network weight --- #
