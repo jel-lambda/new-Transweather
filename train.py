@@ -1,4 +1,5 @@
 import time
+from cosine_annealing import CosineAnnealingWarmUpRestarts
 import torch
 import argparse
 import torch.nn as nn
@@ -136,7 +137,7 @@ print('old_val_psnr: {0:.2f}, old_val_ssim: {1:.4f}'.format(old_val_psnr1, old_v
 
 net.train()
 # scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.95)
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=50, eta_min=0)
+scheduler = CosineAnnealingWarmUpRestarts(optimizer, T_0=150, T_mult=1, eta_max=0.1,  T_up=10, gamma=0.5)
 
 for epoch in range(epoch_start,num_epochs):
     psnr_list = []
