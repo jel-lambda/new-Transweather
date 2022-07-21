@@ -135,6 +135,8 @@ def adjust_learning_rate(optimizer, epoch,  lr_decay=0.5):
     # --- Decay learning rate --- #
     step = 100
 
+    torch.Exponential(optimizer, gamma=0.95)
+
     if not epoch % step and epoch > 0:
         for param_group in optimizer.param_groups:
             param_group['lr'] *= lr_decay

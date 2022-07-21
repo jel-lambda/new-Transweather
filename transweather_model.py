@@ -1,3 +1,4 @@
+from mdta import MDTA
 import torch
 import torch.nn as nn
 import torch.nn.functional
@@ -502,7 +503,7 @@ class Block(nn.Module):
             dim,
             num_heads=num_heads, qkv_bias=qkv_bias, qk_scale=qk_scale,
             attn_drop=attn_drop, proj_drop=drop, sr_ratio=sr_ratio)
-
+        
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
         self.norm2 = norm_layer(dim)
         mlp_hidden_dim = int(dim * mlp_ratio)
@@ -526,7 +527,6 @@ class Block(nn.Module):
                 m.bias.data.zero_()
 
     def forward(self, x, H, W):
-
         x = x + self.drop_path(self.attn(self.norm1(x), H, W))
         x = x + self.drop_path(self.mlp(self.norm2(x), H, W))
         return x

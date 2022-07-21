@@ -135,12 +135,16 @@ old_val_psnr1, old_val_ssim1 = validation(net, val_data_loader1, device, exp_nam
 print('old_val_psnr: {0:.2f}, old_val_ssim: {1:.4f}'.format(old_val_psnr1, old_val_ssim1))
 
 net.train()
+# scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.95)
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=50, eta_min=0)
 
 for epoch in range(epoch_start,num_epochs):
     psnr_list = []
     start_time = time.time()
-    adjust_learning_rate(optimizer, epoch)
-#-------------------------------------------------------------------------------------------------------------
+   # adjust_learning_rate(optimizer, epoch)
+    scheduler.step()
+    print('Epoch-{0} lr: {1}'.format(epoch, optimizer.param_groups[0]['lr']))
+    #-------------------------------------------------------------------------------------------------------------
     for batch_id, train_data in enumerate(lbl_train_data_loader):
 
         input_image, gt, imgid = train_data
