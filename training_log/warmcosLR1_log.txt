@@ -1,0 +1,17 @@
+Date: 2022-07-22 13:45:03s, Time_Cost: 119s, Epoch: [1/200], Train_PSNR: 0.05, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 13:47:02s, Time_Cost: 119s, Epoch: [2/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 13:49:00s, Time_Cost: 118s, Epoch: [3/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 13:50:58s, Time_Cost: 118s, Epoch: [4/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 13:52:57s, Time_Cost: 118s, Epoch: [5/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 13:54:55s, Time_Cost: 118s, Epoch: [6/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 13:56:53s, Time_Cost: 118s, Epoch: [7/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 13:58:51s, Time_Cost: 118s, Epoch: [8/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 14:00:49s, Time_Cost: 118s, Epoch: [9/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 14:02:47s, Time_Cost: 118s, Epoch: [10/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 14:04:45s, Time_Cost: 118s, Epoch: [11/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 14:06:43s, Time_Cost: 118s, Epoch: [12/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 14:08:41s, Time_Cost: 118s, Epoch: [13/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 14:10:39s, Time_Cost: 118s, Epoch: [14/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 14:12:38s, Time_Cost: 118s, Epoch: [15/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 14:14:36s, Time_Cost: 118s, Epoch: [16/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
+Date: 2022-07-22 14:16:34s, Time_Cost: 118s, Epoch: [17/200], Train_PSNR: 0.03, Val_PSNR: 8.10, Val_SSIM: 0.0745
