@@ -2,9 +2,7 @@
 
  <a href="https://arxiv.org/abs/2111.14813"> </a> 
 
-This is notofficial Code for the paper [TransWeather: Transformer-based Restoration of Images Degraded by Adverse Weather Conditions](https://arxiv.org/abs/2111.14813), CVPR 2022
-
-[Paper](https://arxiv.org/abs/2111.14813) | [Website](https://jeya-maria-jose.github.io/transweather-web/)
+This is not an official code for the paper [TransWeather: Transformer-based Restoration of Images Degraded by Adverse Weather Conditions](https://arxiv.org/abs/2111.14813)
 
 Please check [here](https://github.com/jeya-maria-jose/TransWeather).
 
